@@ -12,6 +12,7 @@ TODO
   	-quando o tempo começa a acabar aparece sombre do dragão. Se for muito dificil ela fica parada a descansar quando o tempo chega ao zero até o dragao aparecer
   
   
+ Mais tarde:
  
  3 niveis
 
