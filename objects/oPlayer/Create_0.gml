@@ -19,5 +19,6 @@ gravmax=12;					// terminal velocity when falling
 gravdelta=1.2;				// difference in gravity
 grav_jump = -18;			// jump gravity
 jump=false;					// flag if the player is jumping
+PlayerInput = "Enabled";		// Player input is enabled by default
 // camera that follows the player
 view_camera[0] = camera_create_view(x-500,y-200,1000,400,0,oPlayer,-1,-1,100,100);
