@@ -38,3 +38,4 @@ TODO
 - Quando inimigos tocam no jogador este perde vida consoante o tipo de inimigo. O jogador ganha tambem x tempo de imunidade e fica parado y tempo (a definir)
 -Ela de momento salta 4 quadrados 32*32 é o max e esta ali mesmo no ponto. Pode se mudar mas convem ter uma medida fixa aka x vezes um objeto parede
 -Ataque
+- WASD + left mouse click (attacar). Facil de mudar no create no oPlayer
