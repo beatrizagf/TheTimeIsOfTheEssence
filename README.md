@@ -22,3 +22,19 @@ TODO
 	 Base - masmorras / torre
 	 Intermédio - ?
 	 Avançado - no exterior
+
+	 
+
+-Colisões (basically fazer algo melhor que aquele demo para termos uma boa base)
+- Plataformas - Só tem colisão por cima
+- Tiles a toa de chao - de preferencia mudar isto para algo nosso
+- Fazer a camara seguir o jogador smooth
+- Double jump
+- O salto depende do tempo que premimos o botao de saltar
+- Usar comandos de ps/xbox
+- Corações aumentar vida/pickup
+- Healthbar em cima da princesa a basicamente a mesma coisa que esta la em cima no canto esquerdo
+- Inimigos que se mexem simplesmente sempre na mesma direçao, com as mesmas leis de fisica que o jogador. Quando tocam numa parede trocam a direçao
+- Quando inimigos tocam no jogador este perde vida consoante o tipo de inimigo. O jogador ganha tambem x tempo de imunidade e fica parado y tempo (a definir)
+-Ela de momento salta 4 quadrados 32*32 é o max e esta ali mesmo no ponto. Pode se mudar mas convem ter uma medida fixa aka x vezes um objeto parede
+-Ataque
