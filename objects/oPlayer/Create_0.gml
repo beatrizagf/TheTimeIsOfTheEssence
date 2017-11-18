@@ -43,6 +43,6 @@ attack_key_ctrl = mb_left; //left mouse button;
 left_right_ctrl_ps = gp_axislh; //Analog, if changed, movement needs to be changed
 jump_key_ctrl_ps = gp_face1; //X on Ps
 up_down_ctrl_ps = gp_axislv;
-attack_key_ctrl_ps = gp_face1; //O on Ps
+attack_key_ctrl_ps = gp_face2; //O on Ps
 deadZone = 0.2;
 downDeadZone = 0.7;

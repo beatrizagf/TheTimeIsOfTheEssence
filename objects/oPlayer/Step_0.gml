@@ -3,7 +3,8 @@
 
 with(oPlatform){
 	
-	if ( (round(other.y + (other.sprite_height/2)) > y) || (other.down != 0)){	//We do round in order to be an integer pixel
+	//other.down used to fall from platforms. Might be needed one day.
+	if ( (round(other.y + (other.sprite_height/2)) > y)){// || (other.down != 0)){	//We do round in order to be an integer pixel
 		sprite_index = -1;
 	}
 }
@@ -38,6 +39,10 @@ if(!playerControl){
 		
 		if(gamepad_button_check(0, jump_key_ctrl_ps)){
 			key_jump_pressed = 1;
+		}
+		
+		if( gamepad_button_check(0, attack_key_ctrl_ps)){
+			attack = 1;
 		}
 	
 		var verticalValue = gamepad_axis_value(0, up_down_ctrl_ps);
@@ -150,7 +155,7 @@ var signHsp = sign(hsp);
 if(signHsp != 0){
 	dir = sign(hsp);
 }
-show_debug_message(dir);
+
 
 
 //Sprite

@@ -2,8 +2,6 @@
 // You can write your code in this editor
 
 with(oPlayer){
-	other.x = x + dir*(sprite_width/2 + other.sprite_width/2);
-	show_debug_message(dir*(sprite_width/2 + other.sprite_width/2));
-	show_debug_message(dir);
+	other.x = x + dir*(abs(sprite_width/2) + abs(other.sprite_width/2));
 	other.y = oPlayer.y;
 }
