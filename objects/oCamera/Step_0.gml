@@ -9,8 +9,8 @@ if( instance_exists(follow)){
 
 //Move position
 // Divide by 25 to create smoothness
-x += (xTo - x) / 25;
-y += (yTo - y) / 25; 
+x += (xTo - x) / 15;
+y += (yTo - y) / 15; 
 
 x = clamp(x, view_w_half, room_width-view_w_half);
 
