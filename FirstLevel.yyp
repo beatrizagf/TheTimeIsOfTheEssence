@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "086dff58-ed5d-4861-b561-e063ce703932",
+            "Value": {
+                "id": "fa9af294-1316-4b50-a02f-1515b0b8eda2",
+                "resourcePath": "fonts\\fTahoma24\\fTahoma24.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "0871f5c4-cca5-4684-aec7-ac3de5931732",
             "Value": {
                 "id": "21a3e701-4f16-44e3-bf46-bd2065c791f4",
@@ -159,6 +167,14 @@
             }
         },
         {
+            "Key": "699f3616-24e1-4379-9565-bfd3fc42364c",
+            "Value": {
+                "id": "f8ec9543-bb32-48b0-b379-cb2d885ffa0a",
+                "resourcePath": "sprites\\sStar\\sStar.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "72bfeaf7-5226-46fe-b811-04409b5c0534",
             "Value": {
                 "id": "c1df9059-e71b-436b-8c8f-1ed23edb8ef9",
@@ -211,6 +227,14 @@
             "Value": {
                 "id": "5ff72fe9-87d0-4a50-8094-564690cd2ca4",
                 "resourcePath": "objects\\oCamera\\oCamera.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "ab74782c-cd1a-49bb-a7d0-8f168db9ff50",
+            "Value": {
+                "id": "4c35056c-439c-4901-b2ee-2acccc62c22d",
+                "resourcePath": "objects\\oStar\\oStar.yy",
                 "resourceType": "GMObject"
             }
         },

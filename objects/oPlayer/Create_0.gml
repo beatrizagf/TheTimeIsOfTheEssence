@@ -25,6 +25,9 @@ imune = false;
 imuneTime = 4;
 playerControl = false;
 playerControlTime = 2;
+myscore = 0;				// score of the player
+
+
 
 
 //Commands
