@@ -102,7 +102,7 @@ if( hp < 0 ){
 }
 
 
-////Movement
+//Dash with double tap
 if(controller = 0){
 	if (keyboard_check_pressed(right_key_ctrl)){
 		if (tap_r == 0){
@@ -133,7 +133,7 @@ if(controller = 0){
 	}
 }
 
-
+////Movement
 var move = key_right - key_left;
 
 if (dash && can_dash) {
@@ -168,9 +168,10 @@ if( (vsp < 0) && (!key_jump_pressed)){
 
 
 
-//Horizontal Collision
+
 var wallCheck = place_meeting(x+hsp, y, oWall);
 
+//DASH collisions
 if(can_dash && dash && sign(hsp) != 0){
 	var futureX = x;
 	var endX = round(x+hsp);
@@ -185,7 +186,9 @@ if(can_dash && dash && sign(hsp) != 0){
 	x = futureX;
 	can_dash = false;
 	alarm[2] = room_speed * dash_cooldown;
-}else{
+}
+//Horizontal Collision
+else{
 	if(!wallCheck){
 		x += hsp;
 	}else{
