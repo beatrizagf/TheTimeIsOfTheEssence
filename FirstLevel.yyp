@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "28b3f065-743b-49b3-883d-9d6f2b683ac3",
+            "Value": {
+                "id": "18c70d50-6d76-4739-afbf-b593b9d928ac",
+                "resourcePath": "sprites\\sCrouch\\sCrouch.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2b4ee66f-b291-4fab-a136-757f8b7a49f8",
             "Value": {
                 "id": "e90e9dad-e301-4cac-89b8-c84b1a8c54a4",
