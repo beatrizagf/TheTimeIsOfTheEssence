@@ -22,8 +22,9 @@ if(!playerControl){
 
 
 	//Controller or keyboard checker
-	if (key_left || key_right || key_jump){
+	if (key_left || key_right || key_jump || key_jump_pressed || key_down || attack){
 		controller = 0;
+
 	}else{
 		var horizontalValue = gamepad_axis_value(0, left_right_ctrl_ps);
 		if( abs(horizontalValue) > deadZone){
@@ -44,6 +45,11 @@ if(!playerControl){
 		if( gamepad_button_check(0, attack_key_ctrl_ps)){
 			attack = 1;
 		}
+		
+		if( gamepad_button_check(0, dash_key_ctrl_ps)){
+			dash = true;
+		}
+
 	
 		var verticalValue = gamepad_axis_value(0, up_down_ctrl_ps);
 		if( abs(verticalValue) > downDeadZone){
@@ -93,13 +99,56 @@ if( hp < 0 ){
 	game_restart();
 }
 
+//Dash with double tap
+if(controller = 0){
+	if (keyboard_check_pressed(right_key_ctrl)){
+		if (tap_r == 0){
+			time1 = get_timer();
+			tap_r = 1;
+			tap_l = 0
+		}else if (tap_r == 1) {
+			if (((get_timer() - time1) < dash_time) and can_dash) {
+				dash = true;
+				tap_r = 0;			
+			} else {
+				tap_r = 0;
+			}
+		}
+	}else if (keyboard_check_pressed(left_key_ctrl)){
+		if (tap_l == 0){
+			time1 = get_timer();
+			tap_l = 1;
+			tap_r = 0
+		}else if (tap_l == 1) {
+			if (((get_timer() - time1) < dash_time) and can_dash) {
+				dash = true;
+				tap_l = 0;
+			}else {
+				tap_l = 0;
+			}
+		}
+	}
+}
+
+
+
 
 ////Movement
 var move = key_right - key_left;
 
-hsp = move * walkspd;
+if (dash && can_dash) {
+	hsp = move * vdash;
+} else {
+	hsp = move * walkspd;
+}
+
 
 vsp = vsp + grv;
+
+var signHsp = sign(hsp);
+if(signHsp != 0){
+	dir = sign(hsp);
+}
 
 if(key_jump){
 	if(grounded){
@@ -122,14 +171,28 @@ if( (vsp < 0) && (!key_jump_pressed)){
 //Horizontal Collision
 var wallCheck = place_meeting(x+hsp, y, oWall);
 
-if(!wallCheck){
-	x += hsp;
-}else{
-	while(!place_meeting(x+sign(hsp), y, oWall)){
-		x+= sign(hsp);
+if(can_dash && dash && sign(hsp) != 0){
+	var futureX = x;
+	var endX = round(x+hsp);
+	while(!place_meeting(futureX+dir, y, oWall) && (round(futureX) != endX)){
+		futureX +=dir;
+		
 	}
-	hsp=0;
+	x = futureX;
+	can_dash = false;
+	alarm[2] = room_speed * dash_cooldown;
+}else{
+	if(!wallCheck){
+		x += hsp;
+	}else{
+		while(!place_meeting(x+dir, y, oWall)){
+			x+= dir;
+		}
+		hsp=0;
+	}
 }
+dash = false;
+
 
 
 //Vertical Collision
@@ -152,10 +215,7 @@ if(!wallCheck){
 }
 
 
-var signHsp = sign(hsp);
-if(signHsp != 0){
-	dir = sign(hsp);
-}
+
 
 
 

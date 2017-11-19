@@ -11,7 +11,7 @@ dir=1;
 
 tap_r = 0;
 tap_l = 0;
-vdash = walkspd*25;
+vdash = 112;
 can_dash = true;
 dash = false;
 dash_cooldown = 2;
