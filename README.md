@@ -3,8 +3,17 @@ Primeira abordagem: nivel incompleto com todas as mecanicas do jogo
 
 TODO
 
-  	-se atacada fica mais stunned em vez de se ver um drop no tempo
-  	-tirar as escadas
+ESSENCIAL
+
+	arco										-----> luis(?)
+	tempo, tirar milisegundos
+	crouch, tirar opção do jump, de levantar e diminuir a velocidade
+	
+	
+	extras:
+		sombra do dragao a aproximar-se
+		bounce dos pickups como na demo
+
   	-6 botões: seta esquerda/a, seta direita/d, seta baixo/s, seta cima(salto)/spacebar?, botão para trocar de arma, tecla para disparar
   	-3 armas: espada(dano perto), arco(dano longe), escudo(reflectir)
   	-"técnicas": salto, doublejump, dash /ponderar passar o reflect do escudo para skill em vez de weapon para ser usada de forma mais activa e conjunta com um contra-ataque sem ter que estar sempre a trocar entre shield e weapon?	
