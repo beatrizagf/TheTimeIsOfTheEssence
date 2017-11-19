@@ -179,6 +179,7 @@ if(can_dash && dash && sign(hsp) != 0){
 		
 	}
 	x = futureX;
+	vsp = 0;
 	can_dash = false;
 	alarm[2] = room_speed * dash_cooldown;
 }else{

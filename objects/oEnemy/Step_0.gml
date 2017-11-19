@@ -16,6 +16,7 @@ if(!wallCheck){
 			x+= sign(hsp);
 		}
 		dir= -dir;
+		oldDirection = dir;
 		//hsp=-hsp;
 }
 
