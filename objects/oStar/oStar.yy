@@ -1,5 +1,5 @@
 {
-    "id": "ab74782c-cd1a-49bb-a7d0-8f168db9ff50",
+    "id": "b2ab2f5d-20af-4f3d-99e3-5f4164bf03fb",
     "modelName": "GMObject",
     "mvc": "1.0",
     "name": "oStar",
@@ -12,7 +12,7 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "ab74782c-cd1a-49bb-a7d0-8f168db9ff50"
+            "m_owner": "b2ab2f5d-20af-4f3d-99e3-5f4164bf03fb"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -31,6 +31,6 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "solid": false,
-    "spriteId": "699f3616-24e1-4379-9565-bfd3fc42364c",
+    "spriteId": "850c32b2-b54f-4f49-b854-c05ae5e56c33",
     "visible": true
 }

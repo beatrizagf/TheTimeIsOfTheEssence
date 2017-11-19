@@ -9,6 +9,14 @@ jmpsp = -22;
 grounded = false;
 dir=1;
 
+tap_r = 0;
+tap_l = 0;
+vdash = walkspd*25;
+can_dash = true;
+dash = false;
+dash_cooldown = 2;
+dash_time = 1000000; //1 segundo em microssegundos
+
 maxJumps = 1; //0 = no double jump, 1+ number of jumps after initial one
 dJump = maxJumps;
 
@@ -25,10 +33,7 @@ imune = false;
 imuneTime = 4;
 playerControl = false;
 playerControlTime = 2;
-myscore = 0;				// score of the player
-
-
-
+myscore = 0;
 
 //Commands
 //left_key_ctrl = vk_left;
@@ -47,5 +52,6 @@ left_right_ctrl_ps = gp_axislh; //Analog, if changed, movement needs to be chang
 jump_key_ctrl_ps = gp_face1; //X on Ps
 up_down_ctrl_ps = gp_axislv;
 attack_key_ctrl_ps = gp_face2; //O on Ps
+dash_key_ctrl_ps = gp_face3; //Square on Ps
 deadZone = 0.2;
 downDeadZone = 0.7;
