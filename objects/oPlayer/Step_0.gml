@@ -18,8 +18,7 @@ if(!playerControl){
 	key_jump_pressed = keyboard_check(jump_key_ctrl);
 	key_down = keyboard_check(down_key_ctrl);
 	attack = mouse_check_button(attack_key_ctrl);
-
-
+	toggle = mouse_check_button_released(toggle_key_ctrl);
 
 	//Controller or keyboard checker
 	if (key_left || key_right || key_jump || key_jump_pressed || key_down || attack){
@@ -221,14 +220,25 @@ if(!wallCheck){
 
 
 //Sprite
-if(true){
-	sprite_index = sPlayer;
+//if(true){
+//	sprite_index = sPlayer;
+//}
+//if( hsp == 0){
+//	sprite_index = sPlayer;
+//}else{
+//	sprite_index = sPlayer;
+//}
+if(toggle) {
+	if(is_her_weapon_a_sword) {
+		sprite_index = sPlayerWithBow;
+		is_her_weapon_a_sword = false;
+	} else {
+		sprite_index = sPlayerWithSword;
+		is_her_weapon_a_sword = true;
+	}
 }
-if( hsp == 0){
-	sprite_index = sPlayer;
-}else{
-	sprite_index = sPlayer;
-}
+
+
 if(hsp != 0){
 	image_xscale = dir;
 }

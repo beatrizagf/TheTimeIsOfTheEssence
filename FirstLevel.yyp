@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "25e16dca-473b-41e6-867b-2c39198f594a",
+            "Value": {
+                "id": "6277d1ef-e0ca-4d6b-8ab5-5ed0ce2a31f8",
+                "resourcePath": "sprites\\sPlayerWithBow\\sPlayerWithBow.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "28b3f065-743b-49b3-883d-9d6f2b683ac3",
             "Value": {
                 "id": "18c70d50-6d76-4739-afbf-b593b9d928ac",
@@ -92,6 +100,14 @@
                 "id": "e90e9dad-e301-4cac-89b8-c84b1a8c54a4",
                 "resourcePath": "tilesets\\tileset2\\tileset2.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "352cdf33-7480-4128-91f5-71a03ba80c58",
+            "Value": {
+                "id": "e770898c-674f-4019-967b-fcff3071a014",
+                "resourcePath": "sprites\\sPlayerWithSword\\sPlayerWithSword.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -331,6 +347,14 @@
             "Value": {
                 "id": "ba7d7b19-9bb1-4e45-bde9-758a2e895b40",
                 "resourcePath": "sprites\\sTiles\\sTiles.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "edb67f86-546e-4b8c-a3a6-cd3b0667489f",
+            "Value": {
+                "id": "3469cd50-43ab-42ec-9993-d79b93c4ef4e",
+                "resourcePath": "sprites\\sPlayerOriginal\\sPlayerOriginal.yy",
                 "resourceType": "GMSprite"
             }
         },

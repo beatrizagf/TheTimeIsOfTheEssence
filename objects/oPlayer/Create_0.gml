@@ -34,6 +34,7 @@ imuneTime = 4;
 playerControl = false;
 playerControlTime = 2;
 myscore = 0;
+is_her_weapon_a_sword = true;
 
 //Commands
 //left_key_ctrl = vk_left;
@@ -46,6 +47,7 @@ right_key_ctrl = ord("D");
 jump_key_ctrl = ord("W");
 down_key_ctrl = ord("S");
 attack_key_ctrl = mb_left; //left mouse button;
+toggle_key_ctrl = mb_right; //right mouse button;
 
 //Controler
 left_right_ctrl_ps = gp_axislh; //Analog, if changed, movement needs to be changed
