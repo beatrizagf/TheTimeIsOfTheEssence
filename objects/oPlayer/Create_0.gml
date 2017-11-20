@@ -6,6 +6,7 @@ vsp = 0;
 grv = 2;
 walkspd = 6;
 jmpsp = -22;
+dwnJmpSp = jmpsp/2;
 grounded = false;
 dir=1;
 
@@ -26,15 +27,16 @@ down = 0;
 
 //Stats
 microSecondsConversion = 1000000;
-maxHp = 100 * microSecondsConversion; //10 seconds in microseconds
+maxHp = 10 * microSecondsConversion; //10 seconds in microseconds
 trueHp = 10;
 hp = maxHp;
 imune = false;
 imuneTime = 4;
 playerControl = false;
-playerControlTime = 2;
+playerControlTime = 1;
 myscore = 0;
 is_her_weapon_a_sword = true;
+current_weapon = instance_create_layer(x,y, "Weapon", oSword);
 
 //Commands
 //left_key_ctrl = vk_left;
@@ -46,6 +48,7 @@ left_key_ctrl = ord("A");
 right_key_ctrl = ord("D");
 jump_key_ctrl = ord("W");
 down_key_ctrl = ord("S");
+reset_key_ctrl = ord("R");
 attack_key_ctrl = mb_left; //left mouse button;
 toggle_key_ctrl = mb_right; //right mouse button;
 
@@ -55,5 +58,7 @@ jump_key_ctrl_ps = gp_face1; //X on Ps
 up_down_ctrl_ps = gp_axislv;
 attack_key_ctrl_ps = gp_face2; //O on Ps
 dash_key_ctrl_ps = gp_face3; //Square on Ps
+toggle_key_ctrl_ps = gp_face4; //Triangle on Ps
+reset_key_ctrl_ps = gp_select;
 deadZone = 0.2;
 downDeadZone = 0.7;

@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-with(oEnemy){
+with(other){
 	if(!imune){
 		hp--;
 		if(hp<=0){

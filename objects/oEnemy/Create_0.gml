@@ -11,11 +11,13 @@ hsp = walkspd;
 //jmpsp = -11.5;
 
 //Stats
-maxHp = 3; //10 seconds in microseconds
+maxHp = 3; 
 hp = maxHp;
 imune = false;
 
 hit = false;
 oldDirection = dir;
 
-damageDone = 10;
+damageDone = 1;
+
+imuneTime = 0.25;

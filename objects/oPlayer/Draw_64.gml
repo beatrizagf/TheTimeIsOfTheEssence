@@ -11,8 +11,18 @@ hx = 110;
 hy = 70;
 
 if (instance_exists(oPlayer)){
-	draw_sprite_ext(sTime,0 , hx, hy, 3, 3, 0, c_white,1);						// draw the heart sprite
-	draw_text(hx+40,hy-10,oPlayer.trueHp);	// draw the remaining life time
+	var hp =0;
+	if(oPlayer.trueHp>1){
+		hp = round(oPlayer.trueHp);
+		draw_sprite_ext(sTime,0 , hx, hy, 3, 3, 0, c_white,1);						// draw the heart sprite
+		draw_text(hx+10,hy,hp);	// draw the remaining life time
+	}
+	else{
+		hp = oPlayer.trueHp;
+		draw_sprite_ext(sTime,0 , hx, hy, 3, 3, 0, c_white,1);						// draw the heart sprite
+		draw_text(hx+40,hy-10,hp);	// draw the remaining life time
+	}
+	
 
 	draw_sprite(sStar,0,view_wport[0]-70,50);						// draw the star sprite
 	draw_text(view_wport[0]-40-sprite_get_width(sStar),57,oPlayer.myscore);	// draw the number of stars collected

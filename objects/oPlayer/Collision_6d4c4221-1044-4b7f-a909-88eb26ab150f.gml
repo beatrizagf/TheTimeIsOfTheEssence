@@ -2,7 +2,7 @@
 // You can write your code in this edit
 
 if(!imune){
-	hp -= other.damageDone * microSecondsConversion;
+	//hp -= other.damageDone * microSecondsConversion;
 	imune = true;
 	playerControl = true;
 	alarm[0] = room_speed * imuneTime;
