@@ -4,11 +4,6 @@ Primeira abordagem: nivel incompleto com todas as mecanicas do jogo
 TODO
 
 ESSENCIAL
-
-	arco										-----> luis(?)
-	tempo, tirar milisegundos
-	crouch, tirar opção do jump, de levantar e diminuir a velocidade
-	
 	
 	extras:
 		sombra do dragao a aproximar-se
