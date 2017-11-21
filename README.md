@@ -1,25 +1,42 @@
 # TimeIsOfTheEssence
-Primeira abordagem: nivel incompleto com todas as mecanicas do jogo
+Segunda abordagem: nivel intermédio
 
-TODO
 
-ESSENCIAL
+TODO ESSENCIAL
 	
-	extras:
-		sombra do dragao a aproximar-se
-		bounce dos pickups como na demo
+	Limar o nível (intermédio)
+	Munição limitada com imagem a dizer quanta munição resta -no mesmo sitio da estrela- (mais tarde pensar como passar esta info)
+	Mudar o coração e estrela que estão em cima para baixo (?)
+	Monstros servem para completar o nível a 100% (só aparece no fim do nivel tipo 10/10 monstros derrotados)
+		->Monstros dropam flecha (testar)
+	Sprites para as armas (NÃO as animações da arma (rosa e preto), só elas paradas)
+	Sprites dodge -imagem com cooldown em baixo- (mais tarde mudar cor dos sapatos(?)); aumentar o cooldown
 
-  	-6 botões: seta esquerda/a, seta direita/d, seta baixo/s, seta cima(salto)/spacebar?, botão para trocar de arma, tecla para disparar
-  	-3 armas: espada(dano perto), arco(dano longe), escudo(reflectir)
-  	-"técnicas": salto, doublejump, dash /ponderar passar o reflect do escudo para skill em vez de weapon para ser usada de forma mais activa e conjunta com um contra-ataque sem ter que estar sempre a trocar entre shield e weapon?	
-  	-pequena aceleração quando começa a andar, esta passagem é muito rápida(velocidade depois da aceleração é menor nos primeiros niveis)	
-  	-quando o tempo começa a acabar aparece sombre do dragão. Se for muito dificil ela fica parada a descansar quando o tempo chega ao zero até o dragao aparecer ----- para já basta mostrar que ela morre quando o tempo termina
 	
-	-max time é 10? (power ups metem sempre o tempo a 10) ----só no hardmode
-	-ou passa do 10? (power ups dao random value entre 5 e 10 segundos extra para exemplificar?) ----easymode
-  	isto depende se queremos que se apanhe power ups com mais frequencia e focar menos na luta ou menos frequencia e focar mais na luta. 
-  
- Mais tarde:
+ 
+ EXTRAS
+ 	
+	Sombra/Escuridão quando a vida tiver a chegar ao fim, em vez de vermos com uma barra de vida
+		IDEAL: brilho no coração e na princesa, resto preto sem ser totalmente preto (para nao se deixar de ver a 100%)
+			Se dificil: - glow demoniaco em redor da princesa (sprite "transparente" que segue o jogador)
+				    - gota de suor (sprite "transparente" que segue o jogador)
+	
+	Sprite para mostrar inimigo parado (inicialmente mudar cor; mais tarde inimigo fica com estrelas na cabeça)
+	Mudar o sprite coração para [....]
+	Animação trocar de sala/nivel (com parede a descer para bloquear o caminho de volta)
+	Animação pickups (coração e estrela) a rodar sobre si (tipo o bounce da demo)
+ 
+ 
+ 
+ 
+ 
+ 
+ MAIS TARDE:
+ 
+ 
+ escudo(reflectir) -> escudo para mecanica de boss (mostrar feito ou so falar no relatorio )
+ Sprites para andar
+ Sons
  
  3 niveis
 
@@ -27,8 +44,15 @@ ESSENCIAL
 	 Intermédio - ?
 	 Avançado - no exterior
 
-	 
 
+
+
+
+
+
+
+
+JA FEITO
 -Colisões (basically fazer algo melhor que aquele demo para termos uma boa base)
 - Plataformas - Só tem colisão por cima
 - Tiles a toa de chao - de preferencia mudar isto para algo nosso
