@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "061432b2-6e93-42c4-966a-5e7a389ff581",
+            "Value": {
+                "id": "3131b1df-f088-4103-8507-bf43da5de44f",
+                "resourcePath": "objects\\oPickUpArrow\\oPickUpArrow.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0871f5c4-cca5-4684-aec7-ac3de5931732",
             "Value": {
                 "id": "21a3e701-4f16-44e3-bf46-bd2065c791f4",
@@ -343,6 +351,14 @@
             }
         },
         {
+            "Key": "b0bf587c-c02f-4d87-9151-f3e51a21c57b",
+            "Value": {
+                "id": "bb017522-1186-4bd5-8a09-5efe680907d8",
+                "resourcePath": "sprites\\sprite17\\sprite17.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b2ab2f5d-20af-4f3d-99e3-5f4164bf03fb",
             "Value": {
                 "id": "ba034da9-b08b-46bd-a0e7-2fa5b0724636",
@@ -423,6 +439,14 @@
             }
         },
         {
+            "Key": "dbb955dd-d0c5-470f-a42c-c1ea9940ce71",
+            "Value": {
+                "id": "7b820a19-0c84-430a-afa9-9cc62be8e80a",
+                "resourcePath": "sprites\\sEnemyColision\\sEnemyColision.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "dfb38e45-9458-4f9b-969c-a3e377680e05",
             "Value": {
                 "id": "7e707296-4594-4a0b-a745-51d085ac735c",
@@ -436,6 +460,14 @@
                 "id": "ba7d7b19-9bb1-4e45-bde9-758a2e895b40",
                 "resourcePath": "sprites\/sTiles\/sTiles.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ed93333a-691b-471a-9ef6-0beb92617a86",
+            "Value": {
+                "id": "da4816e1-4823-478d-99f6-d74f10da85e7",
+                "resourcePath": "objects\\oEnemyColision\\oEnemyColision.yy",
+                "resourceType": "GMObject"
             }
         },
         {

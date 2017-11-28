@@ -8,6 +8,9 @@ with(oPlatform){
 		sprite_index = -1;
 	}
 }
+with(oEnemyColision){
+	sprite_index = -1;
+}
 
 if(keyboard_check_pressed(reset_key_ctrl) || gamepad_button_check_pressed(0, reset_key_ctrl_ps)){
 	game_restart();
@@ -299,4 +302,7 @@ with(oPlatform){
 	sprite_index = sPlatform;
 }
 
+with(oEnemyColision){
+	sprite_index = sEnemyColision;
+}
 

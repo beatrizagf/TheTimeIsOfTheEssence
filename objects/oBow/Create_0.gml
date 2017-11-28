@@ -8,3 +8,5 @@ attackTime = 0.5;
 attackRetry = 0.5;
 
 attack = false;
+
+munition=0;

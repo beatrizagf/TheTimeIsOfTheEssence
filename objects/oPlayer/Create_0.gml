@@ -17,7 +17,8 @@ can_dash = true;
 dash = false;
 dash_cooldown = 2;
 dash_time = 1000000; //1 segundo em microssegundos
-
+maxMunition=5;
+munition = maxMunition;	
 maxJumps = 1; //0 = no double jump, 1+ number of jumps after initial one
 dJump = maxJumps;
 

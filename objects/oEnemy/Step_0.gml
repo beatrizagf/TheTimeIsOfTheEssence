@@ -1,6 +1,18 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if(hp<=0){
+	instance_create_layer(x,y,"Attacks", oPickUpArrow);
+	instance_destroy();
+}
+
+with(oPlatform){
+	
+	//other.down used to fall from platforms. Might be needed one day.
+	if ( (round(other.y + (other.sprite_height/2)) > y)){// || (other.down != 0)){	//We do round in order to be an integer pixel
+		sprite_index = -1;
+	}
+}
 
 ////Movement
 vsp = vsp + grv;
@@ -31,7 +43,6 @@ if(!wallCheck){
 		y+= sign(vsp);
 	}
 	if(sign(vsp) == 1 && hit){
-		dir = oldDirection;
 		hit = false;
 	}
 	//reset vertical speed if there's a collision
@@ -55,4 +66,8 @@ if( hsp == 0){
 }
 if(hsp != 0){
 	image_xscale = sign(hsp);
+}
+
+with(oPlatform){
+	sprite_index = sPlatform;
 }

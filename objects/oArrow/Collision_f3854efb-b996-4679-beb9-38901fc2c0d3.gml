@@ -4,9 +4,7 @@
 with(other){
 	if(!imune){
 		hp--;
-		if(hp<=0){
-			instance_destroy();
-		}else{
+		if(hp>0){
 			oldDirection = dir;
 			vsp=-3;
 			dir = sign(x- other.x);

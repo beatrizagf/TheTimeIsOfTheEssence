@@ -27,4 +27,7 @@ if (instance_exists(oPlayer)){
 	draw_sprite(sStar,0,view_wport[0]-70,50);						// draw the star sprite
 	draw_text(view_wport[0]-40-sprite_get_width(sStar),57,oPlayer.myscore);	// draw the number of stars collected
 	
+	draw_sprite(sArrow,0,view_wport[0]-200,50);						// draw the star sprite
+	draw_text(view_wport[0]-200-sprite_get_width(sArrow),50,oPlayer.munition);	// draw the number of stars collected
+	
 }
