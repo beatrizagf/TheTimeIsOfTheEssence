@@ -2,7 +2,8 @@
 // You can write your code in this editor
 
 if(hp<=0){
-	instance_create_layer(x,y,"Attacks", oPickUpArrow);
+	CommonRoll = random_range(0,100);
+	if (CommonRoll >= 50) {instance_create_layer(x,y,"Attacks", oPickUpArrow);}
 	instance_destroy();
 }
 
