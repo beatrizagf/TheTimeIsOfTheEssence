@@ -31,3 +31,10 @@ if (instance_exists(oPlayer)){
 	draw_text(view_wport[0]-200-sprite_get_width(sArrow),50,oPlayer.munition);	// draw the number of stars collected
 	
 }
+/*
+if(hp < 0){
+	draw_set_color(c_black);
+	draw_rectangle(0,0,5000,500,false);
+	draw_rectangle(0,0,5000,display_get_gui_height()-500,false);
+}
+draw_set_color(c_white);*/

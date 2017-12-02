@@ -287,6 +287,14 @@
             }
         },
         {
+            "Key": "8bff743d-d4ad-4890-86f8-52819810db55",
+            "Value": {
+                "id": "b92582f2-4c0d-4514-8001-c1965efa3e38",
+                "resourcePath": "objects\\oGameEnd\\oGameEnd.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "900f1bd6-c694-4587-b93f-265be4421090",
             "Value": {
                 "id": "2fb21522-feac-49bd-9cf8-6c5cba36280c",
@@ -507,14 +515,6 @@
             "Value": {
                 "id": "2d46a084-d55f-4561-9a54-8b1ff3f4d975",
                 "resourcePath": "objects\/oEnemy\/oEnemy.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "fa09f485-8566-4ccb-af51-bfb27fdd1b5a",
-            "Value": {
-                "id": "7af9a4ee-3a23-427f-a42a-a31fcf17aa90",
-                "resourcePath": "objects\/oGame\/oGame.yy",
                 "resourceType": "GMObject"
             }
         }
