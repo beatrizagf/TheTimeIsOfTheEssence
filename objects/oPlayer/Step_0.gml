@@ -207,6 +207,7 @@ if(can_dash && dash && sign(hsp) != 0){
 	can_dash = false;
 	//alarm[2] = room_speed * dash_cooldown;
 	current_dash_cooldown = 0;
+	image_index = 0;
 }else{
 	if(!wallCheck){
 		x += hsp;
@@ -311,4 +312,8 @@ if(current_dash_cooldown < room_speed * dash_cooldown) {
 	current_dash_cooldown++;
 } else {
 	can_dash = true;
+}
+
+if(image_index == 36) {
+	image_index = 29;
 }

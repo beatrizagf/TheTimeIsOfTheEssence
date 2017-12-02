@@ -68,3 +68,4 @@ downDeadZone = 0.7;
 
 //Dash
 current_dash_cooldown = room_speed * dash_cooldown;
+image_index = 29;

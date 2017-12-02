@@ -7,6 +7,7 @@ if(hp<=0){
 	instance_destroy();
 	oPlayer.current_dash_cooldown = room_speed * oPlayer.dash_cooldown;
 	oPlayer.can_dash = true;
+	oPlayer.image_index = 29;
 }
 
 with(oPlatform){
