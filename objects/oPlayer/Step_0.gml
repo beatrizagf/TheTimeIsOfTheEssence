@@ -205,7 +205,8 @@ if(can_dash && dash && sign(hsp) != 0){
 	x = futureX;
 	vsp = 0;
 	can_dash = false;
-	alarm[2] = room_speed * dash_cooldown;
+	//alarm[2] = room_speed * dash_cooldown;
+	current_dash_cooldown = 0;
 }else{
 	if(!wallCheck){
 		x += hsp;
@@ -306,3 +307,8 @@ with(oEnemyColision){
 	sprite_index = sEnemyColision;
 }
 
+if(current_dash_cooldown < room_speed * dash_cooldown) {
+	current_dash_cooldown++;
+} else {
+	can_dash = true;
+}

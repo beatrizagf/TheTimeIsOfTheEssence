@@ -65,3 +65,6 @@ toggle_key_ctrl_ps = gp_face4; //Triangle on Ps
 reset_key_ctrl_ps = gp_select;
 deadZone = 0.2;
 downDeadZone = 0.7;
+
+//Dash
+current_dash_cooldown = room_speed * dash_cooldown;

@@ -5,6 +5,8 @@ if(hp<=0){
 	CommonRoll = random_range(0,100);
 	if (CommonRoll >= 50) {instance_create_layer(x,y,"Attacks", oPickUpArrow);}
 	instance_destroy();
+	oPlayer.current_dash_cooldown = room_speed * oPlayer.dash_cooldown;
+	oPlayer.can_dash = true;
 }
 
 with(oPlatform){
