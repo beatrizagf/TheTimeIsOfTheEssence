@@ -12,6 +12,12 @@ if(victory){
 	draw_rectangle(0,0,5000,5000,false)
 	
 	draw_set_colour(c_white);
-	draw_text(view_wport[0]-580,300, "Victory!");
-	draw_text(view_wport[0]-480,400, "x/x enemies defeated");
+	draw_text(view_wport[0]-580,200, "Victory!");
+	draw_text(view_wport[0]-480,300, "x/x enemies defeated");
+	draw_text(view_wport[0]-500,350, "x/x stars collected");
+	draw_text(view_wport[0]-350,450, "Press R / select to restart the demo.");
+	
+	if(keyboard_check_pressed(reset_key_ctrl) || gamepad_button_check_pressed(0, reset_key_ctrl_ps)) {
+		game_restart();
+	}
 }
