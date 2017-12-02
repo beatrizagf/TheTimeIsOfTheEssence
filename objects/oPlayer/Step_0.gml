@@ -263,11 +263,17 @@ if(hsp != 0){
 }
 
 if(key_down && grounded){
-		sprite_index = sCrouch;
+	var current_image_index = image_index;
+	sprite_index = sCrouch;
+	image_index = current_image_index;
 }else{
+	var current_image_index = image_index;
 	sprite_index = sPlayer;
+	image_index = current_image_index;
 	if(place_meeting(x,y,oWall)){
+		var current_image_index = image_index;
 		sprite_index = sCrouch
+		image_index = current_image_index;
 	}else{
 		down=0;
 	}
@@ -314,6 +320,6 @@ if(current_dash_cooldown < room_speed * dash_cooldown) {
 	can_dash = true;
 }
 
-if(image_index == 36) {
+if(image_index == 30) {
 	image_index = 29;
 }
