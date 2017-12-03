@@ -21,3 +21,5 @@ oldDirection = dir;
 damageDone = 1;
 
 imuneTime = 0.25;
+
+global.count_enemy=0;
