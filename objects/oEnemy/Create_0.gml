@@ -4,21 +4,21 @@
 
 vsp = 0;
 grv = 0.5;
-walkspd = 4;
+walkspd = 2;
 dir = -1;
 hsp = walkspd;
 
 //jmpsp = -11.5;
 
 //Stats
-maxHp = 3; 
+maxHp = 2; 
 hp = maxHp;
 imune = false;
 
 hit = false;
 oldDirection = dir;
 
-damageDone = 1;
+//damageDone = 1;
 
 imuneTime = 0.25;
 

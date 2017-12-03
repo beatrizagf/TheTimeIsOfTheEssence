@@ -3,7 +3,7 @@
 
 with(other){
 	if(!imune){
-		hp--;
+		hp -= other.damage;
 		if(hp>0){
 			oldDirection = dir;
 			vsp=-3;

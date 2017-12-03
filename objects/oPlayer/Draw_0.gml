@@ -3,4 +3,4 @@
 
 draw_self();
 
-draw_healthbar(oPlayer.x - 15, oPlayer.y-45, oPlayer.x + 15, oPlayer.y - 35, (hp/maxHp)*100,c_black, c_red, c_lime,0, true, true);
+draw_healthbar(oPlayer.x - 15, oPlayer.y-35, oPlayer.x + 15, oPlayer.y - 25, (hp/maxHp)*100,c_black, c_red, c_lime,0, true, true);

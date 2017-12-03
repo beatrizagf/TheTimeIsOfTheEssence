@@ -4,20 +4,20 @@
 hsp = 0;
 vsp = 0;
 grv = 2;
-walkspd = 6;
-jmpsp = -22;
+walkspd = 4;
+jmpsp = -16;
 dwnJmpSp = jmpsp/2;
 grounded = false;
 dir=1;
 
 tap_r = 0;
 tap_l = 0;
-vdash = 112;
+vdash = 50;
 can_dash = true;
 dash = false;
 dash_cooldown = 2;
 dash_time = 1000000; //1 segundo em microssegundos
-maxMunition=5;
+maxMunition=2;
 munition = maxMunition;	
 maxJumps = 1; //0 = no double jump, 1+ number of jumps after initial one
 dJump = maxJumps;
@@ -64,7 +64,7 @@ dash_key_ctrl_ps = gp_face3; //Square on Ps
 toggle_key_ctrl_ps = gp_face4; //Triangle on Ps
 reset_key_ctrl_ps = gp_select;
 deadZone = 0.2;
-downDeadZone = 0.7;
+downDeadZone = 0.4;
 
 //Dash
 current_dash_cooldown = room_speed * dash_cooldown;
