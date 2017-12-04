@@ -12,7 +12,7 @@ dir=1;
 
 tap_r = 0;
 tap_l = 0;
-vdash = 50;
+vdash = 100;
 can_dash = true;
 dash = false;
 dash_cooldown = 2;
