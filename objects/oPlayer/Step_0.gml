@@ -74,12 +74,14 @@ if(!playerControl){
 	key_right=0;
 	key_jump=0;
 	key_down=0;
-	if(vsp < 0){ //Don't reset falling
-		vsp=0;
-	}
+	key_jump_pressed=1;
+	//if(vsp < 0){ //Don't reset falling
+	//	vsp=0;
+	//}
 	hsp=0;
 	down=0;
 	attack = 0;
+	toggle=0;
 }
 
 
@@ -109,6 +111,7 @@ if(attack){
 if(gameStart){
 	hp -= delta_time;
 	trueHp = hp/1000000;
+	
 }
 
 if( hp < 0 ){
@@ -150,7 +153,9 @@ if(controller = 0){
 
 
 ////Movement
-var move = key_right - key_left;
+if(!playerControl){
+	move = key_right - key_left;
+}
 
 if (dash && can_dash && !down) {
 	hsp = move * vdash;

@@ -25,18 +25,20 @@ dJump = maxJumps;
 controller = 0;
 
 gameStart = false;
+global.initialTime = 0;
+move=0;
 
 down = 0;
 
 //Stats
 microSecondsConversion = 1000000;
-maxHp = 10 * microSecondsConversion; //10 seconds in microseconds
+maxHp = 100 * microSecondsConversion; //10 seconds in microseconds
 trueHp = 10;
 hp = maxHp;
 imune = false;
-imuneTime = 4;
+imuneTime = 2;
 playerControl = false;
-playerControlTime = 1;
+playerControlTime = 0.75;
 global.myscore = 0;
 is_her_weapon_a_sword = true;
 current_weapon = instance_create_layer(x,y, "Weapon", oSword);

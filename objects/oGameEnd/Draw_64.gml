@@ -6,6 +6,7 @@
 //draw_set_colour(c_black);											// set the colour to draw text
 
 if(end_game == 1){
+	var time = (global.endTime-global.initialTime)/1000000;
 	instance_destroy(oPlayer);	
 	
 	draw_set_colour(c_black);
@@ -13,10 +14,11 @@ if(end_game == 1){
 	if(victory){
 	draw_set_colour(c_white);
 	draw_text(view_wport[0]-580,200, "Victory!");
-	draw_text(view_wport[0]-780,400, global.count_enemy);
-	draw_text(view_wport[0]-470,400,"/8 enemies defeated");
+	draw_text(view_wport[0]-580,300, time);
 	draw_text(view_wport[0]-765,350, global.myscore);
 	draw_text(view_wport[0]-500,350, "/3 stars collected");
+	draw_text(view_wport[0]-780,400, global.count_enemy);
+	draw_text(view_wport[0]-470,400,"/8 enemies defeated");
 	draw_text(view_wport[0]-350,450, "Press R / select to restart the demo.");
 	}else{
 		draw_set_colour(c_white);

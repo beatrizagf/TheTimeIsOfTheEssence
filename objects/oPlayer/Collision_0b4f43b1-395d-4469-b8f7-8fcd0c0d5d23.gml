@@ -3,6 +3,7 @@
 with(other){
 	//victory=1;
 	end_game=1;
+	global.endTime = get_timer();
 	//playerControl = true;
 
 	//alarm[3] = room_speed * 5;

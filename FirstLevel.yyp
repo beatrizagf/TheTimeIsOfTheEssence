@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "0df02d0b-4c04-4843-859a-b7301d7261fa",
+            "Value": {
+                "id": "25b08a0c-9403-48d3-9785-7279dcd2585e",
+                "resourcePath": "sprites\\sStun\\sStun.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "17a13f87-fa1b-4273-82a9-45e8cad840b8",
             "Value": {
                 "id": "651b1898-b909-4976-8a2c-bf3b44ddd9de",

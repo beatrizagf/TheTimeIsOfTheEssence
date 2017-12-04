@@ -7,4 +7,6 @@ if(!imune){
 	playerControl = true;
 	alarm[0] = room_speed * imuneTime;
 	alarm[1] = room_speed * playerControlTime;
+	move = sign(x-other.x);
+	vsp = -8;
 }
