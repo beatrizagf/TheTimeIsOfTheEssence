@@ -53,17 +53,12 @@ if(!wallCheck){
 
 
 
-//Sprite
-if(true){
-	sprite_index = sEnemy;
-}
+
 if( hsp == 0){
-	sprite_index = sEnemy;
-}else{
 	sprite_index = sEnemy;
 }
 if(hsp != 0){
-	image_xscale = sign(hsp);
+	image_xscale = dir;
 }
 
 with(oPlatform){
