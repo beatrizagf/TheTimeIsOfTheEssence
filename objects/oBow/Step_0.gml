@@ -7,9 +7,10 @@ if(instance_exists(oPlayer)){
 		
 		//dirty hack to lower weapons y
 	if(sprite_index == sCrouch){
-		other.y = oPlayer.y+abs(sprite_height/4);
+		other.y = oPlayer.y+abs(sprite_height/2);
 	}else{
-		other.y = oPlayer.y;
+		//Make it pixel perfect. Hack...
+		other.y = oPlayer.y+5;
 	}
 	other.x = x + dir*(abs(sprite_width/2) + abs(other.sprite_width/2));
 	other.dir = dir;
@@ -18,7 +19,8 @@ if(instance_exists(oPlayer)){
 }
 
 if(attack && !cooldown && munition>0){
-	with(instance_create_layer(x,y, "Attacks", oArrow)){
+	//Make it pixel perfect. Hack...
+	with(instance_create_layer(x,y-5, "Attacks", oArrow)){
 		speed = 25;
 		if(other.dir == -1){
 			direction = 180;

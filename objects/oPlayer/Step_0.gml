@@ -295,7 +295,7 @@ if(toggle) {
 		
 		//sprite_index = sPlayerWithBow;
 		is_her_weapon_a_sword = false;
-		current_weapon = instance_create_layer(newX,newY, "Weapon", oBow);
+		current_weapon = instance_create_layer(newX,newY+5, "Weapon", oBow);
 		
 	} else {
 		newX = script0(sPlayer, sSword);
