@@ -20,7 +20,7 @@ if(instance_exists(oPlayer)){
 
 if(attack && !cooldown && munition>0){
 	//Make it pixel perfect. Hack...
-	with(instance_create_layer(x,y-5, "Attacks", oArrow)){
+	with(instance_create_layer(x-sprite_width,y-5, "Attacks", oArrow)){
 		speed = 25;
 		if(other.dir == -1){
 			direction = 180;

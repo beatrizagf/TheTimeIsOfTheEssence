@@ -1,7 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 with(other){
-	victory=1;
+	//victory=1;
+	end_game=1;
 	//playerControl = true;
 
 	//alarm[3] = room_speed * 5;

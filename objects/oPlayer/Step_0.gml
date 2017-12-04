@@ -106,8 +106,10 @@ if(attack){
 }
 
 //Health loss
-hp -= delta_time;
-trueHp = hp/1000000;
+if(gameStart){
+	hp -= delta_time;
+	trueHp = hp/1000000;
+}
 
 if( hp < 0 ){
 	game_restart();

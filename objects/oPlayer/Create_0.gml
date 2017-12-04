@@ -24,6 +24,8 @@ dJump = maxJumps;
 
 controller = 0;
 
+gameStart = false;
+
 down = 0;
 
 //Stats
