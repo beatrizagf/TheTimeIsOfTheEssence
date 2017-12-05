@@ -4,4 +4,4 @@
 attackRetry =0;
 attackTime = 0;
 
-damage = 1;
+damage = 2;
