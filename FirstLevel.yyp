@@ -359,6 +359,14 @@
             }
         },
         {
+            "Key": "bbbfb6e5-ac5e-4d35-9fa8-1632973154ca",
+            "Value": {
+                "id": "f83b9575-1d04-4506-ad4f-7c2cd802019c",
+                "resourcePath": "sprites\\sGlow\\sGlow.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "bcc09fcf-9db5-4420-af3c-448f7e887353",
             "Value": {
                 "id": "b13cca24-9c33-4066-97c8-13726021e7e5",
@@ -428,6 +436,14 @@
                 "id": "7b820a19-0c84-430a-afa9-9cc62be8e80a",
                 "resourcePath": "sprites\\sEnemyColision\\sEnemyColision.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "dc3ae876-966d-4378-8367-b7757f2bc9e5",
+            "Value": {
+                "id": "1e67057f-9160-4a45-8ba1-62db635268ce",
+                "resourcePath": "objects\\oShadow\\oShadow.yy",
+                "resourceType": "GMObject"
             }
         },
         {
