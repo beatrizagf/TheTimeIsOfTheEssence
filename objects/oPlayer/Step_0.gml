@@ -12,7 +12,7 @@ with(oEnemyColision){
 	sprite_index = -1;
 }
 
-if(keyboard_check_pressed(reset_key_ctrl) || gamepad_button_check_pressed(0, reset_key_ctrl_ps)){
+if(keyboard_check_pressed(reset_key_ctrl) || gamepad_button_check_pressed(type, reset_key_ctrl_ps)){
 	game_restart();
 }
 
@@ -32,7 +32,7 @@ if(!playerControl){
 		controller = 0;
 
 	}else{
-		var horizontalValue = gamepad_axis_value(0, left_right_ctrl_ps);
+		var horizontalValue = gamepad_axis_value(type, left_right_ctrl_ps);
 		if( abs(horizontalValue) > deadZone){
 	
 		key_left = abs(min(horizontalValue, 0));
@@ -40,28 +40,28 @@ if(!playerControl){
 	
 		}
 	
-		if( gamepad_button_check_pressed(0, jump_key_ctrl_ps)){
+		if( gamepad_button_check_pressed(type, jump_key_ctrl_ps)){
 			key_jump=1;
 		}
 		
-		if(gamepad_button_check(0, jump_key_ctrl_ps)){
+		if(gamepad_button_check(type, jump_key_ctrl_ps)){
 			key_jump_pressed = 1;
 		}
 		
-		if( gamepad_button_check(0, attack_key_ctrl_ps)){
+		if( gamepad_button_check(type, attack_key_ctrl_ps)){
 			attack = 1;
 		}
 		
-		if( gamepad_button_check(0, dash_key_ctrl_ps)){
+		if( gamepad_button_check(type, dash_key_ctrl_ps)){
 			dash = true;
 		}
 		
-		if( gamepad_button_check_pressed(0, toggle_key_ctrl_ps)){
+		if( gamepad_button_check_pressed(type, toggle_key_ctrl_ps)){
 			toggle = true;
 		}
 
 	
-		var verticalValue = gamepad_axis_value(0, up_down_ctrl_ps);
+		var verticalValue = gamepad_axis_value(type, up_down_ctrl_ps);
 		if( abs(verticalValue) > downDeadZone){
 	
 		//key_up = abs(min(verticalValue, 0));

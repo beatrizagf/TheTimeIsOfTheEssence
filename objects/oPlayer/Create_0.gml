@@ -32,7 +32,7 @@ down = 0;
 
 //Stats
 microSecondsConversion = 1000000;
-maxHp = 100 * microSecondsConversion; //10 seconds in microseconds
+maxHp = 10 * microSecondsConversion; //10 seconds in microseconds
 trueHp = 10;
 hp = maxHp;
 imune = false;
@@ -69,7 +69,7 @@ toggle_key_ctrl_ps = gp_face4; //Triangle on Ps
 reset_key_ctrl_ps = gp_select;
 deadZone = 0.2;
 downDeadZone = 0.4;
-
+type =0;
 //Dash
 current_dash_cooldown = room_speed * dash_cooldown;
 image_index = 29;
