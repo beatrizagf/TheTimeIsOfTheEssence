@@ -103,6 +103,19 @@ if(attack){
 	//	}
 	//}
 	with(current_weapon){
+		instance_destroy();
+	}
+	var newX;
+	var newY;
+	if(sprite_index == sCrouch){
+		newY = y+abs(sprite_height/4);
+	}else{
+		newY = y;
+	}
+	newX = script0(sPlayer, sSword);
+	current_weapon = instance_create_layer(newX,newY, "Weapon", oSword);
+
+	with(current_weapon){
 		attack = true;
 	}
 }
@@ -288,7 +301,7 @@ if(key_down && grounded){
 if(toggle) {
 	with(current_weapon){
 			instance_destroy();
-		}
+	}
 	var newX;
 	var newY;
 	if(sprite_index == sCrouch){
@@ -296,6 +309,12 @@ if(toggle) {
 	}else{
 		newY = y;
 	}
+	newX = script0(sPlayer, sBow);
+	current_weapon = instance_create_layer(newX,newY+5, "Weapon", oBow);
+	with(current_weapon){
+		attack = true;
+	}
+	/*
 	if(is_her_weapon_a_sword) {
 		
 		newX = script0(sPlayer, sBow);
@@ -309,7 +328,7 @@ if(toggle) {
 		//sprite_index = sPlayerWithSword;
 		is_her_weapon_a_sword = true;
 		current_weapon = instance_create_layer(newX,newY, "Weapon", oSword);
-	}
+	}*/
 }
 
 //Restore platform sprites
