@@ -10,14 +10,14 @@ Final:
 
 TODO MELHORIAS
 	
-	Tirar limite de 10 segundos (o tempo dos potes vai acumulando)	-------->FEITO
+	(FEITO)Tirar limite de 10 segundos (o tempo dos potes vai acumulando)
 	Dash -> mudar animação: em vez de teleport, vê-se a princesa a andar muito rápido (para ser mais smooth) com o sprite a brilhar por exemplo. (mantém a invencibilidade)
 	Ecrã abanar quando se ataca o inimigo (TENTAR)
-	Não haver o trabalho de trocar de arma: carregar numa tecla -> mudar de arma (o sprite) e disparar logo ----->FEITO
+	(FEITO)Não haver o trabalho de trocar de arma: carregar numa tecla -> mudar de arma (o sprite) e disparar logo
 	Poções com tamanho diferente (TENTAR)
-	Setas maiores. Número de setas disponível representado por desenho de setas por cima da barra de vida (2 setas em cima da barra) -------->FEITO
+	(FEITO)Setas maiores. Número de setas disponível representado por desenho de setas por cima da barra de vida (2 setas em cima da barra)
 	IDEIA para nível: parede com ranhura pequena que só cabe uma seta
-	Barra escura em cima 	-------->FEITO
+	(FEITO)Barra escura em cima
 
 	
 	
