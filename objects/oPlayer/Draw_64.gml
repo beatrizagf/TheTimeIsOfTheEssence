@@ -25,8 +25,8 @@ if (instance_exists(oPlayer)){
 		draw_text_colour(hx+20,hy+10,hp, c_black, c_black, c_black, c_black,1);	// draw the remaining life time
 	}
 	hx+=110;
-	draw_sprite_ext(sArrow,0 , hx, 50, 6, 6, 0, c_white,1);					// draw the star sprite
-	draw_text_colour(hx+10,50,oPlayer.munition, c_white, c_white, c_white, c_white,1);	// draw the number of stars collected
+	draw_sprite_ext(sArrow,0 , hx, 50, 6, 6, 0, c_white,1);					// draw the arrow sprite
+	draw_text_colour(hx+10,50,oPlayer.munition, c_white, c_white, c_white, c_white,1);	// draw the number of arrows collected
 	hx = view_wport[0]-70;
 	draw_sprite_ext(sStar,0 , hx, 50, 6, 6, 0, c_white,1);
 	//draw_sprite(sStar,0,view_wport[0]-70,50);						// draw the star sprite
