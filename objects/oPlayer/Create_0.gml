@@ -44,6 +44,7 @@ is_her_weapon_a_sword = true;
 current_weapon = instance_create_layer(x,y, "Weapon", oSword);
 victory=0;
 end_game=0;
+end_time=0;
 
 //Commands
 //left_key_ctrl = vk_left;

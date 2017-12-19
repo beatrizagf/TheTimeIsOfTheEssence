@@ -128,7 +128,15 @@ if(gameStart){
 }
 
 if( hp < 0 ){
-	game_restart();
+	with(oGameEnd){
+		
+		end_game=1;
+		victory=0;
+		end_time=1;
+		global.endTime = get_timer();
+		//instance_destroy(oPlayer);
+		//game_restart();
+	}
 }
 
 //Dash with double tap
