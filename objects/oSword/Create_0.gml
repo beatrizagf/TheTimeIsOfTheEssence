@@ -4,7 +4,7 @@
 cooldown=false;
 
 attackTime = 0.5;
-attackRetry = 1;
+attackRetry = 1.3;
 
 attack = false;
 

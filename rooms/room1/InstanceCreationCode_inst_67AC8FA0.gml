@@ -1,0 +1,1 @@
+hpToRecover= 10;
