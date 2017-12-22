@@ -25,10 +25,10 @@ if(!playerControl){
 	key_jump_pressed = keyboard_check(jump_key_ctrl);
 	key_down = keyboard_check(down_key_ctrl);
 	attack = mouse_check_button_pressed(attack_key_ctrl);
-	toggle = mouse_check_button_pressed(toggle_key_ctrl);
+	bow = mouse_check_button_pressed(bow_key_ctrl);
 
 	//Controller or keyboard checker
-	if (key_left || key_right || key_jump || key_jump_pressed || key_down || attack || toggle){
+	if (key_left || key_right || key_jump || key_jump_pressed || key_down || attack || bow){
 		controller = 0;
 
 	}else{
@@ -52,12 +52,12 @@ if(!playerControl){
 			attack = 1;
 		}
 		
-		if( gamepad_button_check(type, dash_key_ctrl_ps)){
+		if( gamepad_button_check_pressed(type, dash_key_ctrl_ps)){
 			dash = true;
 		}
 		
-		if( gamepad_button_check_pressed(type, toggle_key_ctrl_ps)){
-			toggle = true;
+		if( gamepad_button_check(type, bow_key_ctrl_ps)){
+			bow = true;
 		}
 
 	
@@ -81,7 +81,7 @@ if(!playerControl){
 	hsp=0;
 	down=0;
 	attack = 0;
-	toggle=0;
+	bow=0;
 }
 
 
@@ -93,32 +93,7 @@ if(down || key_down != 0 && grounded){
 
 //Make an attack
 
-if(attack){
-	//with(oSword){
-	//	if(!cooldown){
-	//		sprite_index = sSword;
-	//		alarm[0] = room_speed * attackTime;
-	//		cooldown = true;
-	//		alarm[1] = room_speed * attackRetry;
-	//	}
-	//}
-	with(current_weapon){
-		instance_destroy();
-	}
-	var newX;
-	var newY;
-	if(sprite_index == sCrouch){
-		newY = y+abs(sprite_height/4);
-	}else{
-		newY = y;
-	}
-	newX = script0(sPlayer, sSword);
-	current_weapon = instance_create_layer(newX,newY, "Weapon", oSword);
 
-	with(current_weapon){
-		attack = true;
-	}
-}
 
 //Health loss
 if(gameStart){
@@ -269,6 +244,66 @@ if(!wallCheck){
 	vsp=0;
 }
 
+//Weapons
+if(attack && !current_weapon.cooldown){
+	if(!is_her_weapon_a_sword){
+		is_her_weapon_a_sword = true;
+		with(current_weapon){
+			instance_destroy();
+		}
+	
+		var newX;
+		var newY;
+		if(sprite_index == sCrouch){
+			newY = y+abs(sprite_height/4);
+		}else{
+			newY = y;
+		}
+		newX = script0(sPlayer, sSword);
+		current_weapon = instance_create_layer(newX,newY, "Weapon", oSword);
+	}
+	with(current_weapon){
+		attack = true;
+	}
+	
+}
+if(bow && !current_weapon.cooldown){
+	if(is_her_weapon_a_sword){
+		is_her_weapon_a_sword = false;
+		with(current_weapon){
+			instance_destroy();
+		}
+	
+		var newX;
+		var newY;
+		if(sprite_index == sCrouch){
+			newY = y+abs(sprite_height/4);
+		}else{
+			newY = y;
+		}
+		newX = script0(sPlayer, sBow);
+		current_weapon = instance_create_layer(newX,newY+5, "Weapon", oBow);
+	}
+	with(current_weapon){
+		attack = true;
+	}
+	
+	/*
+	if(is_her_weapon_a_sword) {
+		
+		newX = script0(sPlayer, sBow);
+		
+		//sprite_index = sPlayerWithBow;
+		is_her_weapon_a_sword = false;
+		current_weapon = instance_create_layer(newX,newY+5, "Weapon", oBow);
+		
+	} else {
+		newX = script0(sPlayer, sSword);
+		//sprite_index = sPlayerWithSword;
+		is_her_weapon_a_sword = true;
+		current_weapon = instance_create_layer(newX,newY, "Weapon", oSword);
+	}*/
+}
 
 
 
@@ -306,38 +341,7 @@ if(key_down && grounded){
 		down=0;
 	}
 }
-if(toggle) {
-	with(current_weapon){
-			instance_destroy();
-	}
-	var newX;
-	var newY;
-	if(sprite_index == sCrouch){
-		newY = y+abs(sprite_height/4);
-	}else{
-		newY = y;
-	}
-	newX = script0(sPlayer, sBow);
-	current_weapon = instance_create_layer(newX,newY+5, "Weapon", oBow);
-	with(current_weapon){
-		attack = true;
-	}
-	/*
-	if(is_her_weapon_a_sword) {
-		
-		newX = script0(sPlayer, sBow);
-		
-		//sprite_index = sPlayerWithBow;
-		is_her_weapon_a_sword = false;
-		current_weapon = instance_create_layer(newX,newY+5, "Weapon", oBow);
-		
-	} else {
-		newX = script0(sPlayer, sSword);
-		//sprite_index = sPlayerWithSword;
-		is_her_weapon_a_sword = true;
-		current_weapon = instance_create_layer(newX,newY, "Weapon", oSword);
-	}*/
-}
+
 
 //Restore platform sprites
 with(oPlatform){

@@ -24,13 +24,15 @@ if(end_game == 1){
 	draw_text(view_wport[0]-560,200, "Victory!");
 	draw_text(view_wport[0]-595,300, time);
 	draw_text(view_wport[0]-750,350, global.myscore);
-	draw_text(view_wport[0]-485,350, "/6 stars collected");
-	draw_text(view_wport[0]-785,400, global.count_enemy);
-	draw_text(view_wport[0]-455,400,"/12 enemies defeated");
+	draw_text(view_wport[0]-485,350, "/6 gems collected");
+	//draw_text(view_wport[0]-785,400, global.count_enemy);
+	//draw_text(view_wport[0]-455,400,"/12 enemies defeated");
 	draw_text(view_wport[0]-355,550, "Press R / select to restart the demo.");
 	}else{
 		draw_set_colour(c_white);
 		draw_text(view_wport[0]-580,200, "Defeat!");
+		draw_text(view_wport[0]-750,350, global.myscore);
+	draw_text(view_wport[0]-485,350, "/6 gems collected");
 		draw_text(view_wport[0]-350,450, "Press R / select to restart the demo.");
 	}
 	if(keyboard_check_pressed(reset_key_ctrl) || gamepad_button_check_pressed(0, reset_key_ctrl_ps)) {

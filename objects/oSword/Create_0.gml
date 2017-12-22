@@ -11,3 +11,9 @@ attack = false;
 hitbox = -1; //No hitbox on start;
 updateHitbox = false;
 
+dir=0;
+if(instance_exists(oPlayer)){
+	with(oPlayer){
+		other.dir = dir;
+	}
+}

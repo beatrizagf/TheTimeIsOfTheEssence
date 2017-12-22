@@ -22,6 +22,8 @@ munition = maxMunition;
 maxJumps = 1; //0 = no double jump, 1+ number of jumps after initial one
 dJump = maxJumps;
 
+weaponOutOfCooldown=true;
+
 controller = 0;
 
 gameStart = false;
@@ -58,7 +60,7 @@ jump_key_ctrl = ord("W");
 down_key_ctrl = ord("S");
 reset_key_ctrl = ord("R");
 attack_key_ctrl = mb_left; //left mouse button;
-toggle_key_ctrl = mb_right; //right mouse button;
+bow_key_ctrl = mb_right; //right mouse button;
 
 //Controler
 left_right_ctrl_ps = gp_axislh; //Analog, if changed, movement needs to be changed
@@ -66,9 +68,9 @@ jump_key_ctrl_ps = gp_face1; //X on Ps
 up_down_ctrl_ps = gp_axislv;
 attack_key_ctrl_ps = gp_face2; //O on Ps
 dash_key_ctrl_ps = gp_face3; //Square on Ps
-toggle_key_ctrl_ps = gp_face4; //Triangle on Ps
+bow_key_ctrl_ps = gp_face4; //Triangle on Ps
 reset_key_ctrl_ps = gp_select;
-deadZone = 0.2;
+deadZone = 0.3;
 downDeadZone = 0.4;
 type =0;
 //Dash
