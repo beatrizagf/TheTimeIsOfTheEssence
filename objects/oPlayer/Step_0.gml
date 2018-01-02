@@ -190,7 +190,7 @@ if(key_jump){
 }
 
 if( (vsp < 0) && (!key_jump_pressed)){
-	vsp= max(vsp,jmpsp/2);
+	vsp= max(vsp,jmpsp/4);
 }
 
 
