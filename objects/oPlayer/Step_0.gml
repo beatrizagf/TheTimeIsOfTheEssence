@@ -286,39 +286,12 @@ if(attack){
 	with(current_weapon){
 		attack = true;
 	}
-	
-	/*
-	if(is_her_weapon_a_sword) {
-		
-		newX = script0(sPlayer, sBow);
-		
-		//sprite_index = sPlayerWithBow;
-		is_her_weapon_a_sword = false;
-		current_weapon = instance_create_layer(newX,newY+5, "Weapon", oBow);
-		
-	} else {
-		newX = script0(sPlayer, sSword);
-		//sprite_index = sPlayerWithSword;
-		is_her_weapon_a_sword = true;
-		current_weapon = instance_create_layer(newX,newY, "Weapon", oSword);
-	}*/
 }
 
 
 
 
-
-//Sprite
-//if(true){
-//	sprite_index = sPlayer;
-//}
-//if( hsp == 0){
-//	sprite_index = sPlayer;
-//}else{
-//	sprite_index = sPlayer;
-//}
-
-
+//Sprites
 
 if(hsp != 0){
 	image_xscale = dir;
