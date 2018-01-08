@@ -245,7 +245,7 @@ if(!wallCheck){
 }
 
 //Weapons
-if(attack && !current_weapon.cooldown){
+if(attack){
 	if(!is_her_weapon_a_sword){
 		is_her_weapon_a_sword = true;
 		with(current_weapon){
@@ -266,8 +266,7 @@ if(attack && !current_weapon.cooldown){
 		attack = true;
 	}
 	
-}
-if(bow && !current_weapon.cooldown){
+}else if(bow && munition>0){
 	if(is_her_weapon_a_sword){
 		is_her_weapon_a_sword = false;
 		with(current_weapon){
