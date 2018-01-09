@@ -46,6 +46,6 @@ if(current_attack_cooldown < room_speed * attack_cooldown) {
 	can_attack = true;
 }
 
-if(image_index >= 30) {
-	image_index = 29;
+if(image_index >= 60) {
+	image_index = 58;
 }
