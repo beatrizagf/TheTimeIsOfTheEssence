@@ -32,5 +32,12 @@ if(attack && !cooldown){
 	attack = false;
 	cooldown = true;
 	updateHitbox = true;
+	sprite_index = sSwordCd;
 }
 image_xscale = dir;
+
+if(sprite_index == sSwordCd){
+	y += 13;
+	
+}
+

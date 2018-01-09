@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "39410c1a-9351-4314-b848-0194c641333b",
+            "Value": {
+                "id": "98fc9643-1334-41c5-9d61-e5121ccca3a9",
+                "resourcePath": "sprites\\sprite18\\sprite18.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3a8d07f5-25d1-43d7-a900-a588c846fdb9",
             "Value": {
                 "id": "a7fb911e-459e-4d0e-9120-e8ccb813e74c",
@@ -172,6 +180,14 @@
                 "id": "98ea3074-6628-466a-b764-4decb72e43a5",
                 "resourcePath": "views\/5efc1922-0307-4828-91ed-11fb379aaf73.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "620f0b93-bdd1-4eb8-ad82-b33200b293a8",
+            "Value": {
+                "id": "8e98f280-3b32-4543-ab2a-4e1067746567",
+                "resourcePath": "sprites\\sSwordCd\\sSwordCd.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

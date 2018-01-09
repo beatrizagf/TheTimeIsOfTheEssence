@@ -114,47 +114,18 @@ if( hp < 0 ){
 	}
 }
 
-//Dash with double tap
-if(controller = 0){
-	if (keyboard_check_pressed(right_key_ctrl)){
-		if (tap_r == 0){
-			time1 = get_timer();
-			tap_r = 1;
-			tap_l = 0
-		}else if (tap_r == 1) {
-			if (((get_timer() - time1) < dash_time) and can_dash) {
-				dash = true;
-				tap_r = 0;			
-			} else {
-				tap_r = 0;
-			}
-		}
-	}else if (keyboard_check_pressed(left_key_ctrl)){
-		if (tap_l == 0){
-			time1 = get_timer();
-			tap_l = 1;
-			tap_r = 0
-		}else if (tap_l == 1) {
-			if (((get_timer() - time1) < dash_time) and can_dash) {
-				dash = true;
-				tap_l = 0;
-			}else {
-				tap_l = 0;
-			}
-		}
-	}
-}
-
-
-
 
 ////Movement
 if(!playerControl){
 	move = key_right - key_left;
 }
 
+if(sign(move) != 0){
+	dir = sign(move)
+}
+
 if (dash && can_dash && !down) {
-	hsp = move * vdash;
+	hsp = dir* vdash;
 
 }else{
 	dash = false;
@@ -168,10 +139,6 @@ if (dash && can_dash && !down) {
 
 vsp = vsp + grv;
 
-var signHsp = sign(hsp);
-if(signHsp != 0){
-	dir = sign(hsp);
-}
 
 if(key_jump){
 	if(grounded){
@@ -262,8 +229,11 @@ if(attack){
 		newX = script0(sPlayer, sSword);
 		current_weapon = instance_create_layer(newX,newY, "Weapon", oSword);
 	}
-	with(current_weapon){
-		attack = true;
+	if(current_weapon.cooldown = false){
+		
+		with(current_weapon){
+			attack = true;
+		}
 	}
 	
 }else if(bow && munition>0){
@@ -283,8 +253,11 @@ if(attack){
 		newX = script0(sPlayer, sBow);
 		current_weapon = instance_create_layer(newX,newY+5, "Weapon", oBow);
 	}
-	with(current_weapon){
-		attack = true;
+	if(current_weapon.cooldown = false){
+		
+		with(current_weapon){
+			attack = true;
+		}
 	}
 }
 
