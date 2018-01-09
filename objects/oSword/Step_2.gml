@@ -21,23 +21,31 @@ if(updateHitbox){
 }
 
 
-if(attack && !cooldown){
+if(can_attack && attack /*&& !cooldown*/){
 	hitbox = instance_create_layer(x, y, "Attacks", oSwordHitbox);
 	hitbox.image_xscale = dir;
 	hitbox.attackRetry = attackRetry;
 	hitbox.attackTime = attackTime;
 	hitbox.alarm[0] = room_speed * attackTime;
 	alarm[0] = room_speed * attackTime;
-	alarm[1] = room_speed * attackRetry;
+	//alarm[1] = room_speed * attackRetry;
 	attack = false;
 	cooldown = true;
 	updateHitbox = true;
-	sprite_index = sSwordCd;
+	
+	can_attack = false;
+	//alarm[0] = room_speed * attack_cooldown;
+	current_attack_cooldown = 0;
+	image_index = 0;
 }
 image_xscale = dir;
 
-if(sprite_index == sSwordCd){
-	y += 13;
-	
+if(current_attack_cooldown < room_speed * attack_cooldown) {
+	current_attack_cooldown++;
+} else {
+	can_attack = true;
 }
 
+if(image_index >= 30) {
+	image_index = 29;
+}

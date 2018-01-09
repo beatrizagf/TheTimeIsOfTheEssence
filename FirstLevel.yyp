@@ -183,14 +183,6 @@
             }
         },
         {
-            "Key": "620f0b93-bdd1-4eb8-ad82-b33200b293a8",
-            "Value": {
-                "id": "8e98f280-3b32-4543-ab2a-4e1067746567",
-                "resourcePath": "sprites\\sSwordCd\\sSwordCd.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "6563a5dd-a7d7-4027-b702-abe8b115085f",
             "Value": {
                 "id": "2e479602-ee06-4964-a940-3c0cc85adf77",

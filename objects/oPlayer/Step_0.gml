@@ -229,7 +229,7 @@ if(attack){
 		newX = script0(sPlayer, sSword);
 		current_weapon = instance_create_layer(newX,newY, "Weapon", oSword);
 	}
-	if(current_weapon.cooldown = false){
+	if(current_weapon.can_attack){
 		
 		with(current_weapon){
 			attack = true;
