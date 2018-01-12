@@ -24,11 +24,12 @@ if(!playerControl){
 	key_jump = keyboard_check_pressed(jump_key_ctrl);
 	key_jump_pressed = keyboard_check(jump_key_ctrl);
 	key_down = keyboard_check(down_key_ctrl);
+	dash = keyboard_check_pressed(dash_key_ctrl);
 	attack = mouse_check_button_pressed(attack_key_ctrl);
 	bow = mouse_check_button_pressed(bow_key_ctrl);
 
 	//Controller or keyboard checker
-	if (key_left || key_right || key_jump || key_jump_pressed || key_down || attack || bow){
+	if (key_left || key_right || key_jump || key_jump_pressed || key_down || dash || attack || bow){
 		controller = 0;
 
 	}else{
@@ -80,6 +81,7 @@ if(!playerControl){
 	//}
 	hsp=0;
 	down=0;
+	dash = 0;
 	attack = 0;
 	bow=0;
 }
@@ -168,6 +170,7 @@ if( (vsp < 0) && (!key_jump_pressed)){
 var wallCheck = place_meeting(x+hsp, y, oWall);
 
 if(can_dash && dash && sign(hsp) != 0){
+	audio_play_sound(snd_dash, 10, false);
 	var futureX = x;
 	var endX = round(x+hsp);
 	while(!place_meeting(futureX+dir, y, oWall) && (round(futureX) != endX)){

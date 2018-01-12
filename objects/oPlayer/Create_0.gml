@@ -60,6 +60,7 @@ right_key_ctrl = ord("D");
 jump_key_ctrl = ord("W");
 down_key_ctrl = ord("S");
 reset_key_ctrl = ord("R");
+dash_key_ctrl = vk_space; //space button
 attack_key_ctrl = mb_left; //left mouse button;
 bow_key_ctrl = mb_right; //right mouse button;
 

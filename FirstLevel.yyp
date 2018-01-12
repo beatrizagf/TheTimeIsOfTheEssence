@@ -567,6 +567,14 @@
             }
         },
         {
+            "Key": "f7035431-6866-402d-bc88-a288a34cc4ca",
+            "Value": {
+                "id": "a929c846-bf74-48ee-93a5-4b556372afac",
+                "resourcePath": "sounds\\snd_dash\\snd_dash.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "fac5949f-edab-40b5-a34a-976715741ef3",
             "Value": {
                 "id": "340a3f13-91d3-4c99-9659-3bc97afb3387",
