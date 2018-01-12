@@ -22,6 +22,7 @@ if(updateHitbox){
 
 
 if(can_attack && attack /*&& !cooldown*/){
+	audio_play_sound(snd_swing, 10, false);
 	hitbox = instance_create_layer(x, y, "Attacks", oSwordHitbox);
 	hitbox.image_xscale = dir;
 	hitbox.attackRetry = attackRetry;

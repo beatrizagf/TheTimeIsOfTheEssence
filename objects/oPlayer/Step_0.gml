@@ -142,6 +142,7 @@ vsp = vsp + grv;
 
 if(key_jump){
 	if(grounded){
+		audio_play_sound(snd_jump, 10, false);
 		if(down){
 			vsp = dwnJmpSp;
 		}else{
@@ -149,6 +150,7 @@ if(key_jump){
 		}
 	}else{
 		if(dJump && vsp > jmpsp/2){
+			audio_play_sound(snd_jump_2, 10, false);
 			vsp = jmpsp+4;
 			dJump--;
 		}

@@ -19,6 +19,7 @@ if(instance_exists(oPlayer)){
 }
 
 if(attack && !cooldown && munition>0){
+	audio_play_sound(snd_shoot, 10, false);
 	//Make it pixel perfect. Hack...
 	with(instance_create_layer(x-sprite_width,y-5, "Attacks", oArrow)){
 		speed = 25;

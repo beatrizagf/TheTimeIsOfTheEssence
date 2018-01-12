@@ -76,3 +76,5 @@ type =0;
 //Dash
 current_dash_cooldown = room_speed * dash_cooldown;
 image_index = 29;
+
+audio_play_sound(snd_background, 10, true);

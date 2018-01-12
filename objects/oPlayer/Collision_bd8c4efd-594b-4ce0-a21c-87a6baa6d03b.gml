@@ -3,6 +3,7 @@
 
 with(other){
 	if(!(other.munition==other.maxMunition)){
+		audio_play_sound(snd_shoot, 10, false);
 		other.munition += munitionValue;
 		instance_destroy();
 	}

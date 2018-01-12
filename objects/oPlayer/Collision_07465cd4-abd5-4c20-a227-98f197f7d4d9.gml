@@ -7,6 +7,7 @@ gameStart = true;
 
 hp += other.hpToRecover * microSecondsConversion;
 with(other){
+	audio_play_sound(snd_essence, 10, false);
 	instance_destroy();
 }
 /*
