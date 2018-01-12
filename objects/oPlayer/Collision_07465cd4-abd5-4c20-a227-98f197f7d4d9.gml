@@ -5,12 +5,12 @@ if(!gameStart){
 }
 gameStart = true;
 
-hp += other.hpToRecover * microSecondsConversion;
-with(other){
-	audio_play_sound(snd_essence, 10, false);
-	instance_destroy();
-}
-/*
+//hp += other.hpToRecover * microSecondsConversion;
+//with(other){
+//	audio_play_sound(snd_essence, 10, false);
+//	instance_destroy();
+//}
+
 if(hp < maxHp){
 	hp += other.hpToRecover * microSecondsConversion;
 	if( hp > maxHp){
@@ -20,4 +20,3 @@ if(hp < maxHp){
 		instance_destroy();
 	}
 }
-*/

@@ -106,14 +106,13 @@ if(gameStart){
 
 if( hp < 0 ){
 	with(oGameEnd){
-		
 		end_game=1;
 		victory=0;
-		end_time=1;
 		global.endTime = get_timer();
-		//instance_destroy(oPlayer);
+		break;
 		//game_restart();
 	}
+
 }
 
 
