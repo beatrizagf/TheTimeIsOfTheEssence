@@ -13,6 +13,7 @@ dir=1;
 tap_r = 0;
 tap_l = 0;
 vdash = 100;
+picked_dash = true;
 can_dash = true;
 dash = false;
 dash_cooldown = 2;

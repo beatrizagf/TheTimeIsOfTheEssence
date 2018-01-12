@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "364e176e-2be2-47c0-8562-bf9a4f6470ba",
+            "Value": {
+                "id": "0d67a8fe-8551-46d2-b0d0-a07d79612131",
+                "resourcePath": "objects\\oDash\\oDash.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "39410c1a-9351-4314-b848-0194c641333b",
             "Value": {
                 "id": "98fc9643-1334-41c5-9d61-e5121ccca3a9",
