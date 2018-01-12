@@ -17,6 +17,7 @@ if(hp < maxHp){
 		hp = maxHp;
 	}
 	with(other){
+		audio_play_sound(snd_essence, 10, false);
 		instance_destroy();
 	}
 }
