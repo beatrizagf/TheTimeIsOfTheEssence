@@ -48,11 +48,11 @@ if(!playerControl){
 			key_jump_pressed = 1;
 		}
 		
-		if( gamepad_button_check(type, attack_key_ctrl_ps)){
+		if(gamepad_button_check(type, attack_key_ctrl_ps)){
 			attack = 1;
 		}
 		
-		if( gamepad_button_check_pressed(type, dash_key_ctrl_ps)){
+		if(gamepad_button_check_pressed(type, dash_key_ctrl_ps)){
 			dash = true;
 		}
 		
@@ -124,7 +124,7 @@ if(sign(move) != 0){
 	dir = sign(move)
 }
 
-if (dash && can_dash && !down) {
+if (picked_dash && dash && can_dash && !down) {
 	hsp = dir* vdash;
 
 }else{
